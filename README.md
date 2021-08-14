@@ -6,10 +6,12 @@ https://paypal.me/pools/c/8C2M2IWXjk
 
 # Content
 * Dashboards
+Here I do collect different fully functional dashboards that I have made.
     - Administration Dashboard
         - **COMING SOON**
         - Complete Dashboard where you can administrate RSAT from and also remote controll Windows computers with different commands.
 * Components
+Here I do collect some components that I have been working on.
     - Active Directory
         - Modules/Components to adminsitrate your Active Directory with.
     - Windows Client Remote
