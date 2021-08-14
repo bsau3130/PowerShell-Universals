@@ -12,7 +12,7 @@ function Get-DelBTN {
         [Parameter(Mandatory)][string]$RefreshID
     )
 
-    New-UDButton -Text "Delete" -size small -OnClick {
+    New-UDButton -Icon (New-UDIcon -Icon trash_alt) -size small -OnClick {
         $DelFilePath = "$($Folder)\$($File)"
         if ($Null -ne $DelFilePath) {
             try {
