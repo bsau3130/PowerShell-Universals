@@ -5,17 +5,19 @@ If you want to donate a coffee to me you can do it trough the following link;
 https://paypal.me/pools/c/8C2M2IWXjk
 
 # Content
-* Active Directory
-    - Modules/Components to adminsitrate your Active Directory with.
-* Administration Dashboard
-**COMMING SOON**
-    - Complete Dashboard where you can administrate RSAT from and also remotecontroll Windows computers with different commands.
-* Windows Client Remote
-    - Modules/Components that you can administrate Windows Clients remote with.
-* Random
-    - Random Modules/Components that are not placing anyware else.
-* VMWare
-    - Coming soon
+* Dashboards
+    - Administration Dashboard
+        - **COMMING SOON**
+        - Complete Dashboard where you can administrate RSAT from and also remote controll Windows computers with different commands.
+* Components
+    - Active Directory
+        - Modules/Components to adminsitrate your Active Directory with.
+    - Windows Client Remote
+        - Modules/Components that you can administrate Windows Clients remote with.
+    - Random
+        - Random Modules/Components that are not placing anyware else.
+    - VMWare
+        - **Coming soon**
 
 # System Requirements
 The following are system requirments that are needed for all of my project, dashboards, modules and components.
