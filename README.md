@@ -1,6 +1,9 @@
 # Description
 In this repo I do publish different project, dashboards, modules and components that I have developed for PowerShell Universal
 
+If you want to donate a coffee to me you can do it trough the following link;
+https://paypal.me/pools/c/8C2M2IWXjk
+
 # Content
 * Active Directory
     - Modules/Components to adminsitrate your Active Directory with.
