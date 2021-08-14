@@ -17,6 +17,8 @@ Beside the System Requirements that are listed in the "main" README.md file you 
 # Setup
 ## Do on the host
 1. You need to create the correct folders for my example the folders are located in D:\Upload\ but you can change that if you want.
+2. Download the hole Upload Dashboard folder from this Repo and then copy it to; C:\ProgramData\UniversalAutomation\Repository
+3. Import a new Dashboard in the PowerShell Universal Admin, put down the searchpath to the folder and the Dashboard.ps1 like this: C:\ProgramData\UniversalAutomation\Repository\Upload-Dashboard\Dashboard.ps1
 
 ## showpage.ps1
 1. You need to change the folder path in the variables at the top of the page $folder1 - $folder4 change D:\Upload\Folder1 to the correct path for your folders that you want to show in the dashboard. You can also change the name of the variables if you want that.
