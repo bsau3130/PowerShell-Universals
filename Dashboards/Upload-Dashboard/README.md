@@ -19,7 +19,8 @@ Beside the System Requirements that are listed in the "main" README.md file you 
 3. Import a new Dashboard in the PowerShell Universal Admin, put down the searchpath to the folder and the Dashboard.ps1 like this: C:\ProgramData\UniversalAutomation\Repository\Upload-Dashboard\Dashboard.ps1
 4. You also need to allow access to the upload folder in PowerShell Universal Admin under Platform -> Published Folders in my example the path is D:\Upload
 
-## showpage.ps1
+## showpage.ps1  
+(I have only written explanations for the first card, it's the same for the rest!)
 1. Here you need to change the folderpath to the correct folderpath at the correct varibles.
 2. Here you can set the name of the card, change 'Folder 1' to whatever you want to name the card.
 3. You need to change "EXAMPLE" in this "https://EXAMPLE/Folder1/$1Doc" to yours.
