@@ -7,7 +7,7 @@ https://paypal.me/pools/c/8C2M2IWXjk
 # Content
 * Dashboards
     - Administration Dashboard
-        - **COMMING SOON**
+        - **COMING SOON**
         - Complete Dashboard where you can administrate RSAT from and also remote controll Windows computers with different commands.
 * Components
     - Active Directory
@@ -17,7 +17,7 @@ https://paypal.me/pools/c/8C2M2IWXjk
     - Random
         - Random Modules/Components that are not placing anyware else.
     - VMWare
-        - **Coming soon**
+        - **COMING SOON**
 
 # System Requirements
 The following are system requirments that are needed for all of my project, dashboards, modules and components.
