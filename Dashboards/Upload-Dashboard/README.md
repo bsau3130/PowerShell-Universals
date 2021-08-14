@@ -5,8 +5,6 @@ In this example every UDCard shows the content from a folder.
 * **Pages**
     - showpage.ps1  
     Lists the uploaded files in UDCards and the user can download the files
-    - delpage.ps1  
-    Shows UDModal that let you delete files from the uploaded folder
     - uploadpage.ps1  
     Shows UDModal that let you upload selected file
 
@@ -22,7 +20,7 @@ Beside the System Requirements that are listed in the "main" README.md file you 
 4. You also need to allow access to the upload folder in PowerShell Universal Admin under Platform -> Published Folders in my example the path is D:\Upload
 
 ## showpage.ps1
-1. You need to change the folder path in the variables at the top of the page $folder1 - $folder4 change D:\Upload\Folder1 to the correct path for your folders that you want to show in the dashboard. You can also change the name of the variables if you want that.
+1. Here you need to change the folderpath to the correct folderpath at the correct varibles.
 2. Here you can set the name of the card, change 'Folder 1' to whatever you want to name the card.
 3. You need to change "EXAMPLE" in this "https://EXAMPLE/Folder1/$1Doc" to yours.
 
