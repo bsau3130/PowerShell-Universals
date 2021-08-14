@@ -7,6 +7,9 @@ https://paypal.me/pools/c/8C2M2IWXjk
 # Content
 * Active Directory
     - Modules/Components to adminsitrate your Active Directory with.
+* Administration Dashboard
+**COMMING SOON**
+    - Complete Dashboard where you can administrate RSAT from and also remotecontroll Windows computers with different commands.
 * Windows Client Remote
     - Modules/Components that you can administrate Windows Clients remote with.
 * Random
