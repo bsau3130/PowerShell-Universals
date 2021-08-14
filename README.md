@@ -7,6 +7,8 @@ https://paypal.me/pools/c/8C2M2IWXjk
 # Content
 * **Dashboards**  
 Here I do collect different fully functional dashboards that I have made.
+    - Upload Dashboard
+        - With this dashboard you can upload files to the dashboard and the users can see it in the dashboard. You can also delete the uploads.
     - Administration Dashboard
         - **COMING SOON**
         - Complete Dashboard where you can administrate RSAT from and also remote controll Windows computers with different commands.
