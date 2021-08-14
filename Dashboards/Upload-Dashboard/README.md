@@ -15,23 +15,21 @@ Beside the System Requirements that are listed in the "main" README.md file you 
 * Service account that are running PowerShell Universal service on the host need to have the proper premissions to delete, create and change files in the upload folder.
 
 # Setup
-## Do on the host
+## Do on the host / PowerShell Universal Admin page
 1. You need to create the correct folders for my example the folders are located in D:\Upload\ but you can change that if you want.
 2. Download the hole Upload Dashboard folder from this Repo and then copy it to; C:\ProgramData\UniversalAutomation\Repository
 3. Import a new Dashboard in the PowerShell Universal Admin, put down the searchpath to the folder and the Dashboard.ps1 like this: C:\ProgramData\UniversalAutomation\Repository\Upload-Dashboard\Dashboard.ps1
+4. You also need to allow access to the upload folder in PowerShell Universal Admin under Platform -> Published Folders in my example the path is D:\Upload
 
 ## showpage.ps1
 1. You need to change the folder path in the variables at the top of the page $folder1 - $folder4 change D:\Upload\Folder1 to the correct path for your folders that you want to show in the dashboard. You can also change the name of the variables if you want that.
 2. Here you can set the name of the card, change 'Folder 1' to whatever you want to name the card.
 3. You need to change "EXAMPLE" in this "https://EXAMPLE/Folder1/$1Doc" to yours.
 
-## delpage.ps1
-
-## uploadpage.ps1
 
 # Secure
-I can recommend you to make some kind of security for the upload and delete page.  
-In my example below it limit the page so only the choosen roles can open the page.  
+I can recommend you to make some kind of security for the upload and delete icon/button.  
+In my example below it limit the button so only members of ROLE1 and ROLE2 can see them.  
 
 if ($Roles -notin @('ROLE1', 'ROLE2').ForEach{ $PSItem -in $Roles }) {  
     New-UDErrorBoundary -Content {  
@@ -40,5 +38,5 @@ if ($Roles -notin @('ROLE1', 'ROLE2').ForEach{ $PSItem -in $Roles }) {
     }  
 }  
 else {  
-    ## YOURPAGE  
+    ## Delete / add button code
 }  

@@ -16,8 +16,10 @@
             $Data = $Body | ConvertFrom-Json 
             $bytes = [System.Convert]::FromBase64String($Data.Data)
             [System.IO.File]::WriteAllBytes("D:\Upload\$Path\$($Data.Name)", $bytes)
-            Show-UDToast -Message "The file $($Data.Name) are now uploaded!" -MessageColor 'green' -Theme 'light' -TransitionIn 'bounceInUp' -CloseOnClick -Position center -Duration 2000
+            Show-UDToast -Message "The file $($Data.Name) are now uploaded to $($Path)!" -MessageColor 'green' -Theme 'light' -TransitionIn 'bounceInUp' -CloseOnClick -Position center -Duration 2000
             Sync-UDElement -Id 'UploadStart'
+            Invoke-UDRedirect "/Show"
+            Hide-UDModal
         }
         catch {
             Show-UDToast -Message "$($PSItem.Exception)" -MessageColor 'red' -Theme 'light' -TransitionIn 'bounceInUp' -CloseOnClick -Position center -Duration 2000
