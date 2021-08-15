@@ -22,8 +22,9 @@ Beside the System Requirements that are listed in the "main" README.md file you 
 ## showpage.ps1  
 (I have only written explanations for the first card, it's the same for the rest!)
 1. Here you need to change the folderpath to the correct folderpath at the correct varibles.
-2. Here you can set the name of the card, change 'Folder 1' to whatever you want to name the card.
-3. You need to change "EXAMPLE" in this "https://EXAMPLE/Folder1/$1Doc" to yours.
+2. Here you write your domain to the host.
+3. Here you can set the name of the card, change 'Folder 1' to whatever you want to name the card.
+4. Depending on what name/url you have on the published folder you need to change this part to match yours "/Upload/Folder1/"
 
 
 # Secure

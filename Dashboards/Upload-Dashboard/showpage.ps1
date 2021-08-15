@@ -4,6 +4,9 @@ $Folder2 = "D:\Upload\Folder2"
 $Folder3 = "D:\Upload\Folder3"
 $Folder4 = "D:\Upload\Folder4"
 
+# README 2
+$TargetDomain = ""
+
 
 function Get-DelBTN {
     [CmdletBinding()]
@@ -35,15 +38,15 @@ function Get-DelBTN {
 
 New-UDGrid -Spacing '1' -Container -Content {
     New-UDGrid -Item -MediumSize 4 -Content {
-        # README 2
+        # README 3
         New-UDCard -Title 'Folder 1' -Content {
             New-UDDynamic -Id 'Folder1' -content {
                 $FilesFolder1 = Get-ChildItem -Path $Folder1 | select-object -ExpandProperty name
                 New-UDList -Content {
                     foreach ($1Doc in $FilesFolder1) {
                         New-UDListItem -Label "$1Doc" -Icon (New-UDIcon -Icon file_download -Size lg) -OnClick {
-                            # README 3
-                            Invoke-UDRedirect "https://EXAMPLE/Upload/Folder1/$1Doc"
+                            # README 4
+                            Invoke-UDRedirect "https://$TargetDomain/Upload/Folder1/$1Doc"
                         }
                         Get-DelBTN -Folder $Folder1 -File $1Doc -RefreshID "Folder1"
                     }
@@ -61,7 +64,7 @@ New-UDGrid -Spacing '1' -Container -Content {
                 New-UDList -Content {
                     foreach ($2Doc in $FilesFolder2) {
                         New-UDListItem -Label "$2Doc" -Icon (New-UDIcon -Icon file_download -Size lg) -OnClick {
-                            Invoke-UDRedirect "https://EXAMPLE/Upload/Folder2/$2Doc"
+                            Invoke-UDRedirect "https://$TargetDomain/Upload/Folder2/$2Doc"
                         }
                         Get-DelBTN -Folder $Folder2 -File $2Doc -RefreshID "Folder2"
                     }
@@ -79,7 +82,7 @@ New-UDGrid -Spacing '1' -Container -Content {
                 New-UDList -Content {
                     foreach ($3Doc in $FilesFolder3) {
                         New-UDListItem -Label "$3Doc" -Icon (New-UDIcon -Icon file_download -Size lg) -OnClick {
-                            Invoke-UDRedirect "https://EXAMPLE/Upload/Folder3/$3Doc"
+                            Invoke-UDRedirect "https://$TargetDomain/Upload/Folder3/$3Doc"
                         }
                         Get-DelBTN -Folder $Folder3 -File $3Doc -RefreshID "Folder3"
                     }
@@ -97,7 +100,7 @@ New-UDGrid -Spacing '1' -Container -Content {
                 New-UDList -Content {
                     foreach ($4Doc in $FilesFolder4) {
                         New-UDListItem -Label "$4Doc" -Icon (New-UDIcon -Icon file_download -Size lg) -OnClick {
-                            Invoke-UDRedirect "https://EXAMPLE/Upload/Folder4/$4Doc"
+                            Invoke-UDRedirect "https://$TargetDomain/Upload/Folder4/$4Doc"
                         }
                         Get-DelBTN -Folder $Folder4 -File $4Doc -RefreshID "Folder4"
                     }
