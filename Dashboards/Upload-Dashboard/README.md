@@ -7,6 +7,8 @@ In this example every UDCard shows the content from a folder.
     Lists the uploaded files in UDCards and the user can download the files
     - uploadpage.ps1  
     Shows UDModal that let you upload selected file
+    - Delpage.ps1
+    Shows UDModal where you can delete a file.
 
 # System Requirements
 Beside the System Requirements that are listed in the "main" README.md file you also need the following for this dashboard
@@ -20,16 +22,20 @@ Beside the System Requirements that are listed in the "main" README.md file you 
 4. You also need to allow access to the upload folder in PowerShell Universal Admin under Platform -> Published Folders in my example the path is D:\Upload
 
 ## showpage.ps1  
-(I have only written explanations for the first card, it's the same for the rest!)
 1. Here you need to change the folderpath to the correct folderpath at the correct varibles.
 2. Here you write your domain to the host.
 3. Here you can set the name of the card, change 'Folder 1' to whatever you want to name the card.
 4. Depending on what name/url you have on the published folder you need to change this part to match yours "/Upload/Folder1/"
 
+## uploadpage.ps1
+1. Here you write the path to the root upload folder of your choose, for me it's D:\Upload and under that folder my card folders are located.
+
+## Delpage.ps1
+1. Here you write the path to the root upload folder of your choose, for me it's D:\Upload and under that folder my card folders are located.
 
 # Secure
-I can recommend you to make some kind of security for the upload and delete icon/button.  
-In my example below it limit the button so only members of ROLE1 and ROLE2 can see them.  
+I can recommend you to make some kind of security for the upload and delete page.
+In my example below it limit the page so only members of ROLE1 and ROLE2 can see them.  
 
 if ($Roles -notin @('ROLE1', 'ROLE2').ForEach{ $PSItem -in $Roles }) {  
     New-UDErrorBoundary -Content {  

@@ -7,35 +7,6 @@ $Folder4 = "D:\Upload\Folder4"
 # README 2
 $TargetDomain = ""
 
-
-function Get-DelBTN {
-    [CmdletBinding()]
-    Param(
-        [Parameter(Mandatory)][string]$Folder,
-        [Parameter(Mandatory)][string]$File,
-        [Parameter(Mandatory)][string]$RefreshID
-    )
-
-    New-UDButton -Icon (New-UDIcon -Icon trash_alt) -size small -OnClick {
-        $DelFilePath = "$($Folder)\$($File)"
-        if ($Null -ne $DelFilePath) {
-            try {
-                Remove-Item -Path $DelFilePath -force
-                Show-UDToast -Message "$($File) are now deleted!" -MessageColor 'green' -Theme 'light' -TransitionIn 'bounceInUp' -CloseOnClick -Position center -Duration 2000
-                Sync-UDElement -id $RefreshID
-            }
-            catch {
-                Show-UDToast -Message "$($PSItem.Exception)" -MessageColor 'red' -Theme 'light' -TransitionIn 'bounceInUp' -CloseOnClick -Position center -Duration 2000
-                Break
-            }
-        }
-        else {
-            Show-UDToast -Message "You need to select a file!" -MessageColor 'red' -Theme 'light' -TransitionIn 'bounceInUp' -CloseOnClick -Position center -Duration 2000
-            Break
-        }
-    }
-}
-
 New-UDGrid -Spacing '1' -Container -Content {
     New-UDGrid -Item -MediumSize 4 -Content {
         # README 3
@@ -48,7 +19,6 @@ New-UDGrid -Spacing '1' -Container -Content {
                             # README 4
                             Invoke-UDRedirect "https://$TargetDomain/Upload/Folder1/$1Doc"
                         }
-                        Get-DelBTN -Folder $Folder1 -File $1Doc -RefreshID "Folder1"
                     }
                 }
             } -LoadingComponent {
@@ -66,7 +36,6 @@ New-UDGrid -Spacing '1' -Container -Content {
                         New-UDListItem -Label "$2Doc" -Icon (New-UDIcon -Icon file_download -Size lg) -OnClick {
                             Invoke-UDRedirect "https://$TargetDomain/Upload/Folder2/$2Doc"
                         }
-                        Get-DelBTN -Folder $Folder2 -File $2Doc -RefreshID "Folder2"
                     }
                 }
             } -LoadingComponent {
@@ -84,7 +53,6 @@ New-UDGrid -Spacing '1' -Container -Content {
                         New-UDListItem -Label "$3Doc" -Icon (New-UDIcon -Icon file_download -Size lg) -OnClick {
                             Invoke-UDRedirect "https://$TargetDomain/Upload/Folder3/$3Doc"
                         }
-                        Get-DelBTN -Folder $Folder3 -File $3Doc -RefreshID "Folder3"
                     }
                 }
             } -LoadingComponent {
@@ -102,7 +70,6 @@ New-UDGrid -Spacing '1' -Container -Content {
                         New-UDListItem -Label "$4Doc" -Icon (New-UDIcon -Icon file_download -Size lg) -OnClick {
                             Invoke-UDRedirect "https://$TargetDomain/Upload/Folder4/$4Doc"
                         }
-                        Get-DelBTN -Folder $Folder4 -File $4Doc -RefreshID "Folder4"
                     }
                 }
             } -LoadingComponent {
