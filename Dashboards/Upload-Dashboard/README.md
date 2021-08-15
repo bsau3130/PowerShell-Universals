@@ -2,7 +2,8 @@
 With this dashboard you can upload files that then are presented in the dashboard.
 In this example every UDCard shows the content from a folder.
 
-**Here is a video that are showing how it works. I have pre-uploaded some files to speed the recording up.**
+**Here is a video that are showing how it works. I have pre-uploaded some files to speed the recording up.**  
+(When I was clicking on the FileZilla file it did download to the client but as I did cut my display during the recording you did not see the download grafic)
 ![Demo video](https://user-images.githubusercontent.com/76907327/129472336-72d785d8-8279-4857-bd0c-32944971bab3.mp4)
 
 
