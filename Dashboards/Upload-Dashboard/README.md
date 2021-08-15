@@ -2,6 +2,11 @@
 With this dashboard you can upload files that then are presented in the dashboard.
 In this example every UDCard shows the content from a folder.
 
+**Here is a video that are showing how it works. I have pre-uploaded some files to speed the recording up.**  
+https://user-images.githubusercontent.com/76907327/129472255-93877cee-e6a0-4574-b1e8-bfc7b8db32ba.mov
+
+
+
 * **Pages**
     - showpage.ps1  
     Lists the uploaded files in UDCards and the user can download the files
