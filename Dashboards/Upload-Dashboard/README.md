@@ -7,9 +7,6 @@ In this example every UDCard shows the content from a folder.
 ![Demo video](https://user-images.githubusercontent.com/76907327/129472336-72d785d8-8279-4857-bd0c-32944971bab3.mp4)
 
 
-
-
-
 * **Pages**
     - showpage.ps1  
     Lists the uploaded files in UDCards and the user can download the files
