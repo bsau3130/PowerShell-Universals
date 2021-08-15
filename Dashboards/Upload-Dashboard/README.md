@@ -4,9 +4,7 @@ In this example every UDCard shows the content from a folder.
 
 **Here is a video that are showing how it works. I have pre-uploaded some files to speed the recording up.**  
 (When I was clicking on the FileZilla file it did download to the client but as I did cut my display during the recording you did not see the download grafic)  
-![Demo Video](https://user-images.githubusercontent.com/76907327/129473451-96f6608d-e026-499e-9ce6-4c26c70406f2.mov)
-
-
+![Demo Video]()
 
 
 * **Pages**
